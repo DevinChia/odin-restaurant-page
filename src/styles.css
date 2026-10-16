@@ -1,0 +1,69 @@
+@font-face {
+    font-family: lexend-zetta;
+    src: url(../fonts/Lexend_Zetta/LexendZetta-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: sansita-swashed;
+    src: url(../fonts/Sansita_Swashed/SansitaSwashed-VariableFont_wght.ttf);
+}
+
+:root {
+    --color-1: #12372A;
+    --color-2: #FBFADA;
+    --color-3: #ADBC9F;
+    --font-family-1: lexend-zetta;
+    --font-family-2: sansita-swashed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-1);
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+}
+
+.brand {
+    font-family: var(--font-family-1);
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--color-2);
+    text-decoration: none;
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template: 20px / repeat(3, 42px);
+    gap: 48px;
+}
+
+nav button {
+    font-family: var(--font-family-2);
+    font-size: 16px;
+    color: var(--color-2);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav button:hover {
+    color: var(--color-3);
+    transition: 0.3s;
+}
